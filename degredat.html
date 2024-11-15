@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Image Format Experiment</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.16/dist/tailwind.min.css"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="styles/main.css" />
+  </head>
+  <body>
+    <header class="bg-blue-500 text-white text-center p-5">
+      <h1 class="text-4xl">Image Format Experiment</h1>
+      <nav class="mt-4">
+        <a href="index.html" class="text-black hover:underline"
+          >Tornar a l'Index</a
+        >
+      </nav>
+    </header>
+
+    <main
+      class="text-base text-center p-10 grid grid-cols-1 sm:grid-cols-2 md:grid-cols-2 gap-5"
+    >
+      <div>
+        <img
+          src="images/original-degredat.png"
+          alt="Png 24 bits"
+          class="w-full"
+        />
+        <div class="image-info"></div>
+        <section class="bg-gray-100 p-4 mt-4 rounded-lg shadow-lg">
+          <p>
+            Comentari: El PNG 24 bits és ideal per a imatges amb degradats de
+            color i transparència. Manté alta qualitat però pot ser gran en mida
+            de fitxer.
+          </p>
+        </section>
+      </div>
+      <div>
+        <img src="images/degredat-8.png" alt="Png 8 bits" class="w-full" />
+        <div class="image-info"></div>
+        <section class="bg-gray-100 p-4 mt-4 rounded-lg shadow-lg">
+          <p>
+            Comentari: El PNG 8 bits redueix la mida de fitxer però pot perdre
+            qualitat en degradats suaus com aquest.
+          </p>
+        </section>
+      </div>
+      <div>
+        <img src="images/degredat.gif" alt="Gif 24 bits" class="w-full" />
+        <div class="image-info"></div>
+        <section class="bg-gray-100 p-4 mt-4 rounded-lg shadow-lg">
+          <p>
+            Comentari: El GIF 24 bits pot ser útil per a animacions, però no és
+            ideal per a logotips o imatges amb degradats complexos.
+          </p>
+        </section>
+      </div>
+      <div>
+        <img src="images/degredat-8.gif" alt="Gif 8 bits" class="w-full" />
+        <div class="image-info"></div>
+        <section class="bg-gray-100 p-4 mt-4 rounded-lg shadow-lg">
+          <p>
+            Comentari: El GIF 8 bits és més compacte, però pot perdre qualitat
+            en els detalls i els colors dels degradats, en aquest cas no fa la
+            transfarencia.
+          </p>
+        </section>
+      </div>
+      <div>
+        <img src="images/degredat-100.jpg" alt="Jpg original" class="w-full" />
+        <div class="image-info"></div>
+        <section class="bg-gray-100 p-4 mt-4 rounded-lg shadow-lg">
+          <p>
+            Comentari: El JPG és útil per a imatges amb degradats de colors
+            suaus, però la compressió amb pèrdues pot afectar la qualitat.
+          </p>
+        </section>
+      </div>
+      <div>
+        <img
+          src="images/degredat-92.jpg"
+          alt="Jpg alta compressio qualitat al 92%, -65%"
+          class="w-full"
+        />
+        <div class="image-info"></div>
+        <section class="bg-gray-100 p-4 mt-4 rounded-lg shadow-lg">
+          <p>
+            Comentari: La compressió alta redueix la mida del fitxer
+            considerablement, mantenint una bona qualitat en el degradat de
+            blau.
+          </p>
+        </section>
+      </div>
+      <div>
+        <img
+          src="images/degredat-50.jpg"
+          alt="Jpg mitja compressio qualitat al 50%, -89%"
+          class="w-full"
+        />
+        <div class="image-info"></div>
+        <section class="bg-gray-100 p-4 mt-4 rounded-lg shadow-lg">
+          <p>
+            Comentari: La compressió mitjana redueix la mida del fitxer, però la
+            qualitat del degradat pot començar a perdre. Es començen a veure
+            lineas entre els diferents tons.
+          </p>
+        </section>
+      </div>
+      <div>
+        <img
+          src="images/degredat-15.jpg"
+          alt="Jpg baixa compressio qualitat al 15%, -94%"
+          class="w-full"
+        />
+        <div class="image-info"></div>
+        <section class="bg-gray-100 p-4 mt-4 rounded-lg shadow-lg">
+          <p>
+            Comentari: La baixa compressió redueix molt la mida del fitxer, però
+            pot afectar seriosament la qualitat del degradat. Es nota molt les
+            lineas dels diferents tons de blau.
+          </p>
+        </section>
+      </div>
+    </main>
+    <section class="bg-gray-100 p-6 m-20 rounded-lg">
+      <h2 class="text-2xl font-semibold mb-4">
+        Imatge amb Transparència: Quin és el format més òptim per aquest tipus
+        d’imatge i per què?
+      </h2>
+      <p class="mb-4">
+        El format més òptim per a una imatge amb transparència és PNG. Aquest
+        format permet conservar la transparència de l'element, ja que és un
+        format sense pèrdues (lossless). Això significa que la imatge manté la
+        seva qualitat sense degradar-se, incloent els canals alfa per a la
+        transparència. Això és ideal per a logotips, icones i qualsevol imatge
+        que necessiti fons transparents.
+      </p>
+      <p class="mb-4">
+        Si guardem una imatge amb transparència en JPEG, es perdrà tota la
+        transparència i es reemplaçarà per un fons blanc o un altre color sòlid,
+        ja que el JPEG no la suporta. A més, com que és un format amb pèrdues
+        (lossy), la imatge pot perdre qualitat durant la compressió.
+      </p>
+      <p class="mb-4">
+        Si la nostra web té un fons blanc, el format JPEG pot ser adequat, ja
+        que no es necessita transparència, i el JPEG és més eficient per a
+        imatges amb colors continus o degradats. A més, permet una compressió
+        més gran que PNG, el que pot resultar en fitxers de menor mida,
+        millorant el rendiment de la pàgina web.
+      </p>
+    </section>
+
+    <section class="bg-gray-100 p-6 m-20 rounded-lg">
+      <h2 class="text-xl font-semibold mb-2">
+        Comentari sobre el rendiment de les imatges
+      </h2>
+      <p>
+        Segons l'anàlisi de Lighthouse, el rendiment de la pàgina és bo amb una
+        puntuació de 95/100. Es van identificar algunes àrees d'optimización per
+        millorar el temps de càrrega i l'eficiència, incloent:
+      </p>
+      <ul>
+        <li>
+          <strong>Formats d'imatges</strong>: Es recomana utilitzar formats de
+          nova generació com WebP o AVIF per reduir la mida de les imatges sense
+          perdre qualitat.
+        </li>
+        <li>
+          <strong>Dimensionament d'imatges</strong>: Algunes imatges tenen una
+          resolució massa alta per a la mida real que ocupen en la pàgina, la
+          qual cosa pot alentir la càrrega. Ajustar-les milloraria el temps de
+          càrrega.
+        </li>
+        <li>
+          <strong>Codificació eficient</strong>: Les imatges podrien ser millor
+          codificades per reduir la mida dels fitxers i millorar el temps de
+          càrrega.
+        </li>
+        <li>
+          <strong>Definir dimensions explícites</strong>: Afegir amplada i
+          alçada per a cada imatge evitaria canvis en el disseny durant la
+          càrrega (layout shift).
+        </li>
+      </ul>
+      <p>
+        Simulant una connexió 3G lenta, les imatges no optimitzades poden
+        provocar un retards significatius en el temps de càrrega, per la qual
+        cosa és essencial optimitzar les imatges per a un millor rendiment.
+      </p>
+    </section>
+
+    <script src="scripts/main.js"></script>
+  </body>
+</html>

@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Image Format Experiment</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.16/dist/tailwind.min.css"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="styles/main.css" />
+  </head>
+  <body>
+    <header class="bg-blue-500 text-white text-center p-5">
+      <h1 class="text-4xl">Image Format Experiment</h1>
+      <nav class="mt-4">
+        <a href="index.html" class="text-black hover:underline"
+          >Tornar a l'Index</a
+        >
+      </nav>
+    </header>
+
+    <main
+      class="text-base text-center p-10 grid grid-cols-1 sm:grid-cols-2 md:grid-cols-2 gap-5"
+    >
+      <div>
+        <img src="images/logo-original.png" alt="Png 24 bits" class="w-full" />
+        <div class="image-info"></div>
+        <section class="bg-gray-100 p-4 mt-4 rounded-lg shadow-lg">
+          <p>
+            Comentari: El PNG 24 bits és ideal per a logotips gràcies a la seva
+            alta qualitat i transparència, però pot ser gran en mida.
+          </p>
+        </section>
+      </div>
+      <div>
+        <img src="images/logo-original-8.png" alt="Png 8 bits" class="w-full" />
+        <div class="image-info"></div>
+        <section class="bg-gray-100 p-4 mt-4 rounded-lg shadow-lg">
+          <p>
+            Comentari: El PNG 8 bits redueix la mida de fitxer però pot perdre
+            qualitat en logotips amb gradients o detalls fins.
+          </p>
+        </section>
+      </div>
+      <div>
+        <img src="images/logo-original.gif" alt="Gif 24 bits" class="w-full" />
+        <div class="image-info"></div>
+        <section class="bg-gray-100 p-4 mt-4 rounded-lg shadow-lg">
+          <p>
+            Comentari: El GIF a 24 bits pot ser útil per a animacions, però no
+            és ideal per a logotips estàtics a causa de la seva compressió amb
+            pèrdues.
+          </p>
+        </section>
+      </div>
+      <div>
+        <img src="images/logo-original-8.gif" alt="Gif 8 bits" class="w-full" />
+        <div class="image-info"></div>
+        <section class="bg-gray-100 p-4 mt-4 rounded-lg shadow-lg">
+          <p>
+            Comentari: El GIF 8 bits és encara més compacte, però la qualitat de
+            l'imatge es pot veure afectada, especialment en logotips detallats.
+          </p>
+        </section>
+      </div>
+      <div>
+        <img src="images/logo-original.jpg" alt="Jpg original" class="w-full" />
+        <div class="image-info"></div>
+        <section class="bg-gray-100 p-4 mt-4 rounded-lg shadow-lg">
+          <p>
+            Comentari: El JPG és útil per a imatges amb molts detalls i colors,
+            però pot perdre qualitat amb compressió.
+          </p>
+        </section>
+      </div>
+      <div>
+        <img
+          src="images/logo-alt-90.jpg"
+          alt="Jpg alta compressio qualitat al 90%, -65%"
+          class="w-full"
+        />
+        <div class="image-info"></div>
+        <section class="bg-gray-100 p-4 mt-4 rounded-lg shadow-lg">
+          <p>
+            Comentari: Alta compressió (90%) redueix la mida considerablement,
+            mantenint una bona qualitat per a ús web.
+          </p>
+        </section>
+      </div>
+      <div>
+        <img
+          src="images/logo-mitja-55.jpg"
+          alt="Jpg mitja compressio qualitat al 55%, -89%"
+          class="w-full"
+        />
+        <div class="image-info"></div>
+        <section class="bg-gray-100 p-4 mt-4 rounded-lg shadow-lg">
+          <p>
+            Comentari: Compressió mitjana (55%) provoca una reducció
+            considerable de mida, però la qualitat comença a degradar-se.
+          </p>
+        </section>
+      </div>
+      <div>
+        <img
+          src="images/logo-baixa-15.jpg"
+          alt="Jpg baixa compressio qualitat al 15%, -94%"
+          class="w-full"
+        />
+        <div class="image-info"></div>
+        <section class="bg-gray-100 p-4 mt-4 rounded-lg shadow-lg">
+          <p>
+            Comentari: La baixa compressió (15%) redueix molt la mida, però la
+            qualitat es veu seriosament afectada.
+          </p>
+        </section>
+      </div>
+    </main>
+    <section class="bg-gray-100 p-6 m-20 rounded-lg">
+      <h2 class="text-2xl font-semibold mb-4">
+        Logotip: Quin format és el més òptim per aquest tipus d’imatge i per
+        què?
+      </h2>
+      <p class="mb-4">
+        El format més òptim per a un logotip és PNG, és un format d’imatge sense
+        pèrdues (lossless), la qual cosa significa que conserva tota la qualitat
+        de la imatge sense perdre cap detall. Això és especialment important per
+        a un logotip, ja que sovint inclou text i detalls finament definits que
+        no es poden permetre perdre.
+      </p>
+      <p class="mb-4">
+        A més, el PNG permet transparències, cosa que és crucial si el logotip
+        ha de ser sobreposat a diversos fons. Aquest format manté la qualitat
+        d'imatge i és àmpliament compatible amb la majoria d'aplicacions i llocs
+        web.
+      </p>
+      <p class="mb-4">
+        Es pot reduir la mida del fitxer PNG mitjançant compressió sense
+        pèrdues. Tot i això, el PNG tendirà a tenir una mida de fitxer una mica
+        més gran que formats com el JPG o el GIF. No obstant això, la qualitat
+        no es veu afectada, ja que la compressió només elimina dades
+        innecessàries sense afectar la imatge visible.
+      </p>
+      <p>
+        En resum, el format PNG és el més òptim per a un logotip perquè conserva
+        la qualitat d’imatge, permet transparències i és compatible amb una
+        àmplia gamma d’aplicacions. Si la mida del fitxer és una preocupació, es
+        pot utilitzar compressió sense pèrdues per reduir la mida sense afectar
+        la qualitat.
+      </p>
+    </section>
+
+    <section class="bg-gray-100 p-6 m-20 rounded-lg">
+      <h2 class="text-xl font-semibold mb-2">
+        Comentari sobre el rendiment de imatges
+      </h2>
+      <p>
+        Segons anàlisi de Lighthouse, s'han identificat alguns punts de millora
+        en el rendiment de les imatges de la pàgina. Els problemes principals
+        inclouen:
+      </p>
+      <ul>
+        <li>
+          <strong>Format d'imatges</strong>: Es recomana utilitzar formats de
+          nova generació com WebP o AVIF per reduir la mida de les imatges sense
+          perdre qualitat.
+        </li>
+        <li>
+          <strong>Mida de les imatges</strong>: Algunes imatges tenen una
+          resolució massa alta per a la mida real que ocupen en la pàgina.
+          Ajustant la mida de les imatges s'aconseguirà una càrrega més ràpida.
+        </li>
+        <li>
+          <strong>Codificació ineficient</strong>: Les imatges podrien estar
+          millor codificades per reduir la seva mida i millorar el temps de
+          càrrega.
+        </li>
+        <li>
+          <strong>Dimensions explícites</strong>: Definir amplada i alçada
+          explícites per a cada imatge ajudarà a evitar canvis en el disseny
+          durant la càrrega (layout shift).
+        </li>
+      </ul>
+      <p>
+        A més, simular una connexió 3G lenta revela que les imatges no
+        optimitzades poden retardar significativament el temps de càrrega de la
+        pàgina.
+      </p>
+    </section>
+
+    <script src="scripts/main.js"></script>
+  </body>
+</html>

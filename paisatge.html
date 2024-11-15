@@ -1,0 +1,217 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Image Format Experiment</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.16/dist/tailwind.min.css"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="styles/main.css" />
+  </head>
+  <body>
+    <header class="bg-blue-500 text-white text-center p-5">
+      <h1 class="text-4xl">Image Format Experiment</h1>
+      <nav class="mt-4">
+        <a href="index.html" class="text-black hover:underline"
+          >Tornar a l'Index</a
+        >
+      </nav>
+    </header>
+
+    <main
+      class="text-base text-center p-10 grid grid-cols-1 sm:grid-cols-2 md:grid-cols-2 gap-5"
+    >
+      <div>
+        <img
+          src="images/original-paisatge.jpg"
+          alt="Jpg original, qualitat 100%, reducció 0%"
+          class="w-full"
+        />
+        <div class="image-info"></div>
+        <section class="bg-gray-100 p-4 mt-4 rounded-lg shadow-lg">
+          <p>
+            <strong>Comentari:</strong> El format JPG original ofereix bona
+            qualitat visual, ideal per a paissatges, però la mida del fitxer és
+            relativament alta. Es recomana comprimir la imatge per reduir la
+            mida del fitxer sense perdre qualitat perceptible.
+          </p>
+        </section>
+      </div>
+      <div>
+        <img
+          src="images/paissatge-alta-90.jpg"
+          alt="Jpg alta compressió, qualitat 90%, reducció 1%"
+          class="w-full"
+        />
+        <div class="image-info"></div>
+        <section class="bg-gray-100 p-4 mt-4 rounded-lg shadow-lg">
+          <p>
+            <strong>Comentari:</strong> Aquesta compressió del 90% redueix
+            moderadament la mida del fitxer mantenint una qualitat visual
+            gairebé indistinguible de l'original. És una bona opció per a
+            pàgines web amb imatges importants.
+          </p>
+        </section>
+      </div>
+      <div>
+        <img
+          src="images/paissatge-mitja-50.jpg"
+          alt="Jpg compressió mitjana, qualitat 50%, reducció 47%"
+          class="w-full"
+        />
+        <div class="image-info"></div>
+        <section class="bg-gray-100 p-4 mt-4 rounded-lg shadow-lg">
+          <p>
+            <strong>Comentari:</strong> Amb una compressió del 50%, la qualitat
+            visual es manté acceptable.
+          </p>
+        </section>
+      </div>
+      <div>
+        <img
+          src="images/paissatge-baixa-15.jpg"
+          alt="Jpg baixa compressió, qualitat 15%, reducció 81%"
+          class="w-full"
+        />
+        <div class="image-info"></div>
+        <section class="bg-gray-100 p-4 mt-4 rounded-lg shadow-lg">
+          <p>
+            <strong>Comentari:</strong> Amb una compressió del 15%, es noten que
+            falten colors, les montanyes per exemple es veuen amb un to violeta,
+            colors distorsionats.
+          </p>
+        </section>
+      </div>
+      <div>
+        <img
+          src="images/original-paisatge.png"
+          alt="Png 24 bits"
+          class="w-full"
+        />
+        <div class="image-info"></div>
+        <section class="bg-gray-100 p-4 mt-4 rounded-lg shadow-lg">
+          <p>
+            <strong>Comentari:</strong> El format PNG 24 bits conserva tots els
+            detalls de l'original i sense pèrdues, pero es veu una mica mes
+            apagada.
+          </p>
+        </section>
+      </div>
+      <div>
+        <img
+          src="images/original-paisatge-8.png"
+          alt="Png 8 bits"
+          class="w-full"
+        />
+        <div class="image-info"></div>
+        <section class="bg-gray-100 p-4 mt-4 rounded-lg shadow-lg">
+          <p>
+            <strong>Comentari:</strong> PNG 8 bits redueix la mida del fitxer
+            dràsticament limitant la paleta de colors. En aquest cas casi no hi
+            ha diferencia. Tot i així algunes montanyes es veuen en diferent
+            color.
+          </p>
+        </section>
+      </div>
+      <div>
+        <img
+          src="images/original-paisatge.gif"
+          alt="Gif 24 bits"
+          class="w-full"
+        />
+        <div class="image-info"></div>
+        <section class="bg-gray-100 p-4 mt-4 rounded-lg shadow-lg">
+          <p>
+            <strong>Comentari:</strong> El format GIF 24 bits es veu be pero no
+            es el mes optim per aquesta fotografia.
+          </p>
+        </section>
+      </div>
+      <div>
+        <img
+          src="images/original-paisatge-8.gif"
+          alt="Gif 8 bits"
+          class="w-full"
+        />
+        <div class="image-info"></div>
+        <section class="bg-gray-100 p-4 mt-4 rounded-lg shadow-lg">
+          <p>
+            <strong>Comentari:</strong> El format GIF 8 bits és ideal per a
+            gràfics senzills o animacions amb paletes limitades, però no és
+            adequat per a fotografies per la seva pèrdua de qualitat i limitació
+            de colors. Igual que ha passat en el png, algunes montanyes es veuen
+            amb diferents colors que la original.
+          </p>
+        </section>
+      </div>
+    </main>
+    <section class="bg-gray-100 p-6 m-20 rounded-lg">
+      <h2 class="text-2xl font-semibold mb-4">
+        Fotografia i Paisatge: Quin format és el més òptim per aquest tipus
+        d’imatge i per què?
+      </h2>
+      <p class="mb-4">
+        Per a fotografies el format més òptim és JPEG per la seva capacitat de
+        compressió amb pèrdues que manté una qualitat acceptable per a la
+        majoria d'usos. La compressió pot reduir considerablement la mida del
+        fitxer, cosa que és essencial per a la càrrega ràpida a pàgines web.
+      </p>
+      <p class="mb-4">
+        En termes de qualitat visible, una compressió entre el 60% i el 50%
+        aquesta imatge es podría veure bé
+      </p>
+      <p class="mb-4">
+        Si una imatge es desa repetidament en format JPEG, es pot experimentar
+        una degradació progressiva de la qualitat degut a les pèrdues.
+      </p>
+    </section>
+    <section class="bg-gray-100 p-6 m-20 rounded-lg">
+      <h2 class="text-2xl font-semibold mb-4">Resum de l'Anàlisi Lighthouse</h2>
+      <p class="mb-4">
+        L'anàlisi revela diversos problemes i recomanacions per millorar el
+        rendiment i l'experiència de l'usuari:
+      </p>
+      <ul class="list-disc list-inside mb-4">
+        <li>
+          <strong>Problemes amb les imatges:</strong> Les imatges grans no estan
+          redimensionades adequadament, amb un potencial d'estalvi de 69 MB si
+          es redueixen les seves mides i es comprimeixen. També es recomana
+          utilitzar formats de nova generació com WebP per estalviar fins a 26
+          MB addicionals.
+        </li>
+        <li>
+          <strong>Excessiu payload:</strong> La mida total de la pàgina és de 70
+          MB, molt superior al recomanat per a connexions lentes. Els recursos
+          animats també contribueixen amb un potencial estalvi de 37 MB si es
+          converteixen a formats de vídeo.
+        </li>
+      </ul>
+      <h2 class="text-2xl font-semibold mb-4">
+        Observacions amb connexió lenta 3G
+      </h2>
+      <p class="mb-4">
+        Amb una simulació de connexió lenta 3G, s'ha detectat que:
+      </p>
+      <ul class="list-disc list-inside mb-4">
+        <li>
+          Els temps de càrrega són molt alts, trigant més de 7 segons a
+          aparèixer.
+        </li>
+        <li>
+          La gran mida dels recursos, especialment les imatges no optimitzades i
+          animacions GIF, dificulta la càrrega ràpida i genera una experiència
+          d’usuari deficient.
+        </li>
+        <li>
+          Els desplaçaments de contingut durant la càrrega afecten negativament
+          l’experiència, fent necessari definir dimensions explícites per a les
+          imatges.
+        </li>
+      </ul>
+    </section>
+
+    <script src="scripts/main.js"></script>
+  </body>
+</html>

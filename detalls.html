@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Image Format Experiment</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.16/dist/tailwind.min.css"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="styles/main.css" />
+  </head>
+  <body>
+    <header class="bg-blue-500 text-white text-center p-5">
+      <h1 class="text-4xl">Image Format Experiment</h1>
+      <nav class="mt-4">
+        <a href="index.html" class="text-black hover:underline"
+          >Tornar a l'Index</a
+        >
+      </nav>
+    </header>
+
+    <main
+      class="text-base text-center p-10 grid grid-cols-1 sm:grid-cols-2 md:grid-cols-2 gap-5"
+    >
+      <div>
+        <img
+          src="images/detalls-original.jpg"
+          alt="Jpg original, qualitat 100%, reducció 0%"
+          class="w-full"
+        />
+        <div class="image-info"></div>
+        <section class="bg-gray-100 p-4 mt-4 rounded-lg shadow-lg">
+          <p>
+            <strong>Comentari:</strong> El format JPG original ofereix bona
+            qualitat visual, ideal per a fotografies, però la mida del fitxer és
+            relativament alta. Es recomana comprimir la imatge per reduir la
+            mida del fitxer sense perdre qualitat perceptible.
+          </p>
+        </section>
+      </div>
+      <div>
+        <img
+          src="images/detalls-alta-90.jpg"
+          alt="Jpg alta compressió, qualitat 90%, reducció 3%"
+          class="w-full"
+        />
+        <div class="image-info"></div>
+        <section class="bg-gray-100 p-4 mt-4 rounded-lg shadow-lg">
+          <p>
+            <strong>Comentari:</strong> Aquesta compressió del 90% redueix
+            moderadament la mida del fitxer mantenint una qualitat visual
+            gairebé indistinguible de l'original. És una bona opció per a
+            pàgines web amb imatges importants.
+          </p>
+        </section>
+      </div>
+      <div>
+        <img
+          src="images/detalls-mitjana-50.jpg"
+          alt="Jpg compressió mitjana, qualitat 50%, reducció 73%"
+          class="w-full"
+        />
+        <div class="image-info"></div>
+        <section class="bg-gray-100 p-4 mt-4 rounded-lg shadow-lg">
+          <p>
+            <strong>Comentari:</strong> Amb una compressió del 50%, la qualitat
+            visual es manté acceptable per a la majoria d'usos, però la mida del
+            fitxer es redueix significativament.
+          </p>
+        </section>
+      </div>
+      <div>
+        <img
+          src="images/detalls-baixa-15.jpg"
+          alt="Jpg baixa compressió, qualitat 15%, reducció 91%"
+          class="w-full"
+        />
+        <div class="image-info"></div>
+        <section class="bg-gray-100 p-4 mt-4 rounded-lg shadow-lg">
+          <p>
+            <strong>Comentari:</strong> Amb una compressió del 15%, es noten
+            artefactes visibles, com pèrdua de definició i colors distorsionats.
+            Tot hi que en aquest cas es veu força bé
+          </p>
+        </section>
+      </div>
+      <div>
+        <img
+          src="images/detalls-original.png"
+          alt="Png 24 bits"
+          class="w-full"
+        />
+        <div class="image-info"></div>
+        <section class="bg-gray-100 p-4 mt-4 rounded-lg shadow-lg">
+          <p>
+            <strong>Comentari:</strong> El format PNG 24 bits conserva tots els
+            detalls de l'original amb qualitat excel·lent i sense pèrdues.
+          </p>
+        </section>
+      </div>
+      <div>
+        <img
+          src="images/detalls-original-8.png"
+          alt="Png 8 bits"
+          class="w-full"
+        />
+        <div class="image-info"></div>
+        <section class="bg-gray-100 p-4 mt-4 rounded-lg shadow-lg">
+          <p>
+            <strong>Comentari:</strong> PNG 8 bits redueix la mida del fitxer
+            dràsticament limitant la paleta de colors.
+          </p>
+        </section>
+      </div>
+      <div>
+        <img
+          src="images/detalls-original.gif"
+          alt="Gif 24 bits"
+          class="w-full"
+        />
+        <div class="image-info"></div>
+        <section class="bg-gray-100 p-4 mt-4 rounded-lg shadow-lg">
+          <p>
+            <strong>Comentari:</strong> El format GIF 24 bits és poc comú,
+            especialment per la mida gran del fitxer i la seva limitada
+            compatibilitat. És millor optar per altres formats moderns.
+          </p>
+        </section>
+      </div>
+      <div>
+        <img
+          src="images/detalls-original-8.gif"
+          alt="Gif 8 bits"
+          class="w-full"
+        />
+        <div class="image-info"></div>
+        <section class="bg-gray-100 p-4 mt-4 rounded-lg shadow-lg">
+          <p>
+            <strong>Comentari:</strong> El format GIF 8 bits no és adequat per a
+            fotografies per la seva pèrdua de qualitat i limitació de colors. En
+            aquest cas es veu força bé.
+          </p>
+        </section>
+      </div>
+    </main>
+    <section class="bg-gray-100 p-6 m-20 rounded-lg">
+      <h2 class="text-2xl font-semibold mb-4">
+        Fotografia i Paisatge: Quin format és el més òptim per aquest tipus
+        d’imatge i per què?
+      </h2>
+      <p class="mb-4">
+        Per a fotografies el format més òptim és JPEG per la seva capacitat de
+        compressió amb pèrdues que manté una qualitat acceptable per a la
+        majoria d'usos. La compressió pot reduir considerablement la mida del
+        fitxer, cosa que és essencial per a la càrrega ràpida a pàgines web.
+      </p>
+      <p class="mb-4">
+        En termes de qualitat visible, una compressió entre el 70% i el 80% és
+        generalment suficient per mantenir una imatge d’alta qualitat amb una
+        reducció de mida significativa. Si necessitem màxima qualitat el format
+        PNG es recomanable.
+      </p>
+      <p class="mb-4">
+        Si una imatge es desa repetidament en format JPEG, es pot experimentar
+        una degradació progressiva de la qualitat degut a les pèrdues.
+      </p>
+    </section>
+    <section class="bg-gray-100 p-6 m-20 rounded-lg">
+      <h2 class="text-2xl font-semibold mb-4">Resum de l'Anàlisi Lighthouse</h2>
+      <p class="mb-4">
+        L'anàlisi de Lighthouse identifica diversos problemes de rendiment
+        relacionats amb les imatges:
+      </p>
+      <ul class="list-disc list-inside mb-4">
+        <li>
+          <strong>Imatges no optimitzades:</strong> Les imatges grans no estan
+          comprimides ni redimensionades adequadament, cosa que augmenta els
+          temps de càrrega.
+        </li>
+        <li>
+          <strong>Formats obsolets:</strong> No s'estan utilitzant formats
+          moderns com WebP o AVIF, que podrien reduir la mida dels fitxers fins
+          a un 30%-50%.
+        </li>
+        <li>
+          <strong>Mides no definides:</strong> Algunes imatges no tenen amplades
+          i altures explícites, provocant desplaçaments en el disseny (CLS).
+        </li>
+        <li>
+          <strong>Excessiu payload:</strong> La mida total dels recursos és
+          massa alta (44 MB), principalment degut a les imatges.
+        </li>
+      </ul>
+      <h2 class="text-2xl font-semibold mb-4">
+        Observacions amb connexió lenta 3G
+      </h2>
+      <p class="mb-4">
+        Simulant una connexió 3G lenta, s’observa que les imatges grans i no
+        optimitzades triguen molt a carregar-se. Això impacta negativament,
+        augmentant el temps de càrrega completa fins als 28 segons.
+      </p>
+      <p class="mb-4">
+        Els espais buits generats fins a la càrrega completa afecten creant una
+        experiència d’usuari poc fluida, especialment en dispositius mòbils amb
+        connexions lentes.
+      </p>
+    </section>
+
+    <script src="scripts/main.js"></script>
+  </body>
+</html>
