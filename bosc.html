@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Image Format Experiment</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.16/dist/tailwind.min.css"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="styles/main.css" />
+  </head>
+  <body>
+    <header class="bg-blue-500 text-white text-center p-5">
+      <h1 class="text-4xl mb-4">UF2.3 - Formats d’Imatge Moderns</h1>
+      <nav>
+        <ul
+          class="flex flex-col sm:flex-row justify-center space-y-2 sm:space-y-0 sm:space-x-4 items-center"
+        >
+          <li>
+            <a href="index.html" class="text-white hover:text-gray-300"
+              >Tasca 1</a
+            >
+          </li>
+          <li>
+            <a href="tasca2.html" class="text-white hover:text-gray-300"
+              >Tasca 2</a
+            >
+          </li>
+          <li>
+            <a href="lighthouse.html" class="text-white hover:text-gray-300"
+              >Lighthouse Projecte UF1</a
+            >
+          </li>
+        </ul>
+      </nav>
+    </header>
+
+    <main
+      class="text-base text-center p-10 grid grid-cols-1 sm:grid-cols-2 md:grid-cols-2 gap-5"
+    >
+      <div>
+        <img src="images/bosc.jpg" alt="Jpg comprimida" class="w-full" />
+        <div class="image-info"></div>
+      </div>
+      <div>
+        <img
+          src="images/bosc.webp"
+          alt="Webp compressió lossles"
+          class="w-full"
+        />
+        <div class="image-info"></div>
+      </div>
+      <div>
+        <img
+          src="images/bosc.avif"
+          alt="Avif compressio lossles"
+          class="w-full"
+        />
+        <div class="image-info"></div>
+      </div>
+    </main>
+    <section class="bg-gray-100 p-6 m-20 rounded-lg shadow-lg">
+      <h2 class="text-2xl font-bold mb-4">Comparativa d'Imatges</h2>
+      <table
+        class="table-auto border-collapse border border-gray-400 w-full text-left"
+      >
+        <thead>
+          <tr class="bg-gray-200">
+            <th class="border border-gray-400 px-4 py-2">Nom Imatge</th>
+            <th class="border border-gray-400 px-4 py-2">JPG</th>
+            <th class="border border-gray-400 px-4 py-2">WebP (Estalvi %)</th>
+            <th class="border border-gray-400 px-4 py-2">Avif (Estalvi %)</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td class="border border-gray-400 px-4 py-2">bosc.jpg</td>
+            <td class="border border-gray-400 px-4 py-2">3609.86 KB</td>
+            <td class="border border-gray-400 px-4 py-2">
+              3102.28 KB (14.06%)
+            </td>
+            <td class="border border-gray-400 px-4 py-2">
+              2087.17 KB (42.17%)
+            </td>
+          </tr>
+        </tbody>
+      </table>
+    </section>
+
+    <script src="scripts/main.js"></script>
+  </body>
+</html>

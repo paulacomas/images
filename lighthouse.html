@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title></title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.16/dist/tailwind.min.css"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="styles/main.css" />
+  </head>
+  <body>
+    <header class="bg-blue-500 text-white text-center p-5">
+      <h1 class="text-4xl mb-4">UF2.3 - Formats d’Imatge Moderns</h1>
+      <nav>
+        <ul
+          class="flex flex-col sm:flex-row justify-center space-y-2 sm:space-y-0 sm:space-x-4 items-center"
+        >
+          <li>
+            <a href="index.html" class="text-white hover:text-gray-300"
+              >Tasca 1</a
+            >
+          </li>
+          <li>
+            <a href="tasca2.html" class="text-white hover:text-gray-300"
+              >Tasca 2</a
+            >
+          </li>
+          <li>
+            <a href="lighthouse.html" class="text-white hover:text-gray-300"
+              >Lighthouse Projecte UF1</a
+            >
+          </li>
+        </ul>
+      </nav>
+    </header>
+    <main
+      class="text-base text-center p-10 grid grid-cols-1 sm:grid-cols-2 md:grid-cols-1 gap-5"
+    >
+      <div class="cursor-pointer">
+        <img src="images/lighthouse.png" alt="Example 1" class="w-full" />
+        <div class="image-info"></div>
+      </div>
+    </main>
+
+    <section class="bg-gray-100 p-6 m-20 rounded-lg shadow-lg">
+      <h1 class="text-3xl font-bold text-blue-600 mb-4">
+        Informe sobre l'Accessibilitat Web i l'Optimització SEO amb Lighthouse
+      </h1>
+      <p class="text-gray-700 leading-relaxed mb-4">
+        Després d'analitzar la pàgina web creada per al projecte de la UF1 amb
+        l'eina Lighthouse, s'han identificat diversos aspectes clau relacionats
+        amb l'accessibilitat, el rendiment i el SEO. A continuació es detallen
+        les conclusions i recomanacions per millorar els resultats en aquestes
+        àrees.
+      </p>
+
+      <h3 class="text-xl font-bold text-gray-700 mb-2">1. Accessibilitat</h3>
+      <p class="text-gray-700 leading-relaxed">
+        L'accessibilitat és un dels punts més destacats de l'anàlisi, ja que la
+        pàgina ha obtingut una puntuació de 100. No obstant això, és important
+        revisar els següents punts per garantir que els usuaris amb
+        discapacitats tinguin una experiència òptima:
+      </p>
+      <ul class="list-disc list-inside text-gray-700 pl-5">
+        <li>
+          Contrast de colors: Comprovar que els colors utilitzats en el disseny
+          de la pàgina compleixin amb les directrius d'accessibilitat en termes
+          de contrast per millorar la llegibilitat.
+        </li>
+        <li>
+          Etiquetes alt en les imatges: Totes les imatges de la pàgina han de
+          tenir etiquetes alt descriptives per millorar l'experiència dels
+          usuaris que utilitzen lectors de pantalla. Aquestes etiquetes
+          proporcionen informació rellevant per a aquells que no poden veure les
+          imatges.
+        </li>
+        <li>
+          Element ARIA: Es recomana l'ús d'atributs ARIA per garantir que els
+          elements dinàmics de la pàgina siguin accessibles, especialment quan
+          es tracta de formularis i controls interactius.
+        </li>
+      </ul>
+
+      <h3 class="text-xl font-bold text-gray-700 mt-4 mb-2">2. Rendiment</h3>
+      <p class="text-gray-700 leading-relaxed">
+        L'anàlisi de rendiment ha mostrat un resultat excel·lent en termes de
+        Temps de Carrega, amb una puntuació de 100. Tot i això, s'han
+        identificat àrees en què es pot millorar l'optimització de les imatges:
+      </p>
+      <ul class="list-disc list-inside text-gray-700 pl-5">
+        <li>
+          Servei d'imatges en formats de nova generació (WebP i AVIF): Les
+          imatges han de ser servides en formats moderns com WebP i AVIF, ja que
+          aquests formats ofereixen una millor compressió que els formats
+          tradicionals com PNG i JPEG, resultant en arxius més petits i temps de
+          càrrega més ràpids. Actualment, es poden estalviar 784 KiB en les
+          imatges, com es mostra en l'anàlisi.
+        </li>
+        <li>
+          Mida de les imatges: Es recomana ajustar la mida de les imatges per
+          evitar que siguin més grans del necessari. Per exemple, algunes
+          imatges podrien ser redimensionades per estalviar fins a 1,317 KiB en
+          total, millorant així el temps de càrrega, especialment per a
+          dispositius mòbils.
+        </li>
+        <li>
+          Comprimir les imatges: Les imatges poden ser millorades mitjançant una
+          compressió més eficient, amb estalvis de fins a 16 KiB en les imatges
+          actuals.
+        </li>
+      </ul>
+
+      <h3 class="text-xl font-bold text-gray-700 mt-4 mb-2">3. SEO</h3>
+      <p class="text-gray-700 leading-relaxed">
+        En relació amb el SEO, la pàgina obté una puntuació de 72, el que indica
+        que hi ha marge per millorar diversos aspectes que poden ajudar a
+        millorar la visibilitat a motors de cerca com Google:
+      </p>
+      <ul class="list-disc list-inside text-gray-700 pl-5">
+        <li>
+          Metadades: La pàgina actualment no té una meta descripció, que és un
+          element essencial per descriure breument el contingut de la pàgina als
+          motors de cerca. Afegir una descripció que resumi de manera atractiva
+          el contingut pot ajudar a millorar els resultats de cerca.
+        </li>
+        <li>
+          Estructura del contingut HTML: La pàgina ha de tenir una estructura
+          més clara amb etiquetes semàntiques per millorar la comprensió del
+          contingut per part dels motors de cerca. Per exemple, l'ús adequat de
+          títols (h1, h2, h3) pot ajudar a estructurar millor el contingut i
+          millorar el SEO.
+        </li>
+      </ul>
+
+      <h2 class="text-2xl font-semibold text-gray-800 mt-6 mb-3">
+        Que es pot millorar?
+      </h2>
+      <h3 class="text-xl font-bold text-gray-700 mb-2">
+        Millorar l'accessibilitat:
+      </h3>
+      <ul class="list-disc list-inside text-gray-700 pl-5">
+        <li>
+          Assegurarme que els colors compleixin amb les normes de contrast.
+        </li>
+        <li>
+          Implementar atributs ARIA per a millorar la interactivitat de la
+          pàgina per a usuaris amb discapacitats.
+        </li>
+        <li>Afegir etiquetes alt descriptives a totes les imatges.</li>
+      </ul>
+
+      <h3 class="text-xl font-bold text-gray-700 mt-4 mb-2">
+        Optimitzar el rendiment:
+      </h3>
+      <p class="text-gray-700 leading-relaxed"></p>
+      <ul class="list-disc list-inside text-gray-700 pl-5">
+        <li>
+          Convertir les imatges en formats moderns (WebP o AVIF) per reduir la
+          mida dels arxius.
+        </li>
+        <li>
+          Ajustar la mida de les imatges per evitar arxius més grans del
+          necessari.
+        </li>
+        <li>Comprimir les imatges per millorar el temps de càrrega.</li>
+      </ul>
+
+      <h3 class="text-xl font-bold text-gray-700 mt-4 mb-2">
+        Millorar el SEO:
+      </h3>
+      <ul class="list-disc list-inside text-gray-700 pl-5">
+        <li>
+          Afegir una meta descripció a cada pàgina per millorar la seva
+          visibilitat a Google.
+        </li>
+        <li>
+          Utilitza etiquetes semàntiques i una millor estructura HTML per
+          facilitar la comprensió del contingut pels motors de cerca.
+        </li>
+      </ul>
+    </section>
+  </body>
+</html>

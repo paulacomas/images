@@ -1,0 +1,240 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title></title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.16/dist/tailwind.min.css"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="styles/main.css" />
+  </head>
+  <body>
+    <header class="bg-blue-500 text-white text-center p-5">
+      <h1 class="text-4xl mb-4">UF2.3 - Formats d’Imatge Moderns</h1>
+      <nav>
+        <ul
+          class="flex flex-col sm:flex-row justify-center space-y-2 sm:space-y-0 sm:space-x-4 items-center"
+        >
+          <li>
+            <a href="index.html" class="text-white hover:text-gray-300"
+              >Tasca 1</a
+            >
+          </li>
+          <li>
+            <a href="tasca2.html" class="text-white hover:text-gray-300"
+              >Tasca 2</a
+            >
+          </li>
+          <li>
+            <a href="lighthouse.html" class="text-white hover:text-gray-300"
+              >Lighthouse Projecte UF1</a
+            >
+          </li>
+        </ul>
+      </nav>
+    </header>
+    <main
+      class="text-base text-center p-10 grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-5"
+    >
+      <a href="logoT2.html" class="block">
+        <div class="cursor-pointer">
+          <img src="images/logo-original.png" alt="Example 1" class="w-full" />
+          <div class="image-info"></div>
+        </div>
+      </a>
+      <a href="detalls2.html" class="block">
+        <div class="cursor-pointer">
+          <img
+            src="images/detalls-original.jpg"
+            alt="Example 2"
+            class="w-full"
+          />
+          <div class="image-info"></div>
+        </div>
+      </a>
+      <a href="paisatge2.html" class="block">
+        <div class="cursor-pointer">
+          <img
+            src="images/original-paisatge.jpg"
+            alt="Example 3"
+            class="w-full"
+          />
+          <div class="image-info"></div>
+        </div>
+      </a>
+      <a href="degredat2.html" class="block">
+        <div class="cursor-pointer">
+          <img
+            src="images/original-degredat.png"
+            alt="Example 4"
+            class="w-full"
+          />
+          <div class="image-info"></div>
+        </div>
+      </a>
+      <a href="gif.html" class="block">
+        <div class="cursor-pointer">
+          <img src="images/gif.gif" alt="Example 4" class="w-full" />
+          <div class="image-info"></div>
+        </div>
+      </a>
+    </main>
+    <div class="flex items-center justify-center flex-grow">
+      <h1 class="text-4xl">Part 2 - AVIF</h1>
+    </div>
+    <main
+      class="text-base text-center p-10 grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-5"
+    >
+      <a href="bosc.html" class="block">
+        <div class="cursor-pointer">
+          <img src="images/bosc.jpg" alt="Example 1" class="w-full" />
+          <div class="image-info"></div>
+        </div>
+      </a>
+      <a href="ciutat.html" class="block">
+        <div class="cursor-pointer">
+          <img src="images/ciutat.jpg" alt="Example 2" class="w-full" />
+          <div class="image-info"></div>
+        </div>
+      </a>
+      <a href="mar.html" class="block">
+        <div class="cursor-pointer">
+          <img src="images/mar.jpg" alt="Example 3" class="w-full" />
+          <div class="image-info"></div>
+        </div>
+      </a>
+    </main>
+    <section class="bg-gray-100 p-6 m-20 rounded-lg shadow-lg">
+      <h1 class="text-3xl font-bold text-blue-600 mb-4">
+        Comparació d'Imatges: AVIF, WebP i JPG
+      </h1>
+
+      <h2 class="text-2xl font-semibold text-gray-800 mt-6 mb-3">
+        Observacions
+      </h2>
+      <p class="text-gray-700 leading-relaxed">
+        A partir de l'anàlisi de les tres imatges (bosc de tardor, ciutat amb
+        llums de neó i mar amb ones) es poden destacar diferències:
+      </p>
+      <ul class="list-disc list-inside text-gray-800 mt-4">
+        <li>
+          <strong>Mida de l'arxiu:</strong>
+          <ul class="list-circle list-inside pl-5">
+            <li>
+              <strong>AVIF:</strong> Genera arxius més petits que WebP i JPG,
+              especialment en imatges amb degradats suaus o detalls complexos.
+            </li>
+            <li>
+              <strong>WebP:</strong> Mida eficient però lleugerament més gran
+              que AVIF a alta qualitat.
+            </li>
+            <li>
+              <strong>JPG:</strong> Produeix arxius significativament més grans,
+              sobretot en escenes amb molta textura o colors brillants.
+            </li>
+          </ul>
+        </li>
+        <li>
+          <strong>Qualitat visual:</strong>
+          <ul class="list-circle list-inside pl-5">
+            <li>
+              <strong>AVIF:</strong> Excel·lent per detalls fins, degradats
+              suaus i colors complexos, evita artefactes visibles com bandes de
+              color.
+            </li>
+            <li>
+              <strong>WebP:</strong> Bona qualitat general, però amb risc
+              d'artefactes en degradats o zones amb alt contrast.
+            </li>
+            <li>
+              <strong>JPG:</strong> Qualitat acceptable però amb pèrdua de
+              detalls en textures fines i transicions suaus.
+            </li>
+          </ul>
+        </li>
+      </ul>
+
+      <h2 class="text-2xl font-semibold text-gray-800 mt-6 mb-3">
+        Comparació Imatge per Imatge
+      </h2>
+
+      <h3 class="text-xl font-bold text-gray-700 mb-2">1. Bosc de Tardor</h3>
+      <ul class="list-disc list-inside text-gray-700 pl-5">
+        <li>
+          <strong>AVIF:</strong> Manté els detalls de les fulles i la suavitat
+          de la boira amb un arxiu petit.
+        </li>
+        <li>
+          <strong>WebP:</strong> Bona qualitat, però pot introduir artefactes en
+          la boira.
+        </li>
+        <li>
+          <strong>JPG:</strong> Mostra bandes a la boira i genera un arxiu més
+          gran.
+        </li>
+      </ul>
+
+      <h3 class="text-xl font-bold text-gray-700 mt-4 mb-2">
+        2. Ciutat amb Llums de Neó
+      </h3>
+      <ul class="list-disc list-inside text-gray-700 pl-5">
+        <li>
+          <strong>AVIF:</strong> Excel·lent maneig dels colors i els detalls
+          dels cartells i reflexos.
+        </li>
+        <li>
+          <strong>WebP:</strong> Apta però amb risc d'artefactes en zones de
+          contrast alt.
+        </li>
+        <li>
+          <strong>JPG:</strong> Compatible, però amb pèrdua de nitidesa en
+          cartells petits i colors menys intensos.
+        </li>
+      </ul>
+
+      <h3 class="text-xl font-bold text-gray-700 mt-4 mb-2">3. Mar amb Ones</h3>
+      <ul class="list-disc list-inside text-gray-700 pl-5">
+        <li>
+          <strong>AVIF:</strong> Ideal per preservar els detalls de l’escuma i
+          els degradats de l’aigua amb un arxiu reduït.
+        </li>
+        <li>
+          <strong>WebP:</strong> Acceptable, però pot perdre nitidesa en detalls
+          fins com l’escuma.
+        </li>
+        <li>
+          <strong>JPG:</strong> Mostra menys detalls a l’espuma i genera un
+          arxiu considerablement més gran.
+        </li>
+      </ul>
+
+      <h2 class="text-2xl font-semibold text-gray-800 mt-6 mb-3">
+        És AVIF una bona substitució per WebP?
+      </h2>
+      <p class="text-gray-700 leading-relaxed">
+        AVIF és una excel·lent substitució per WebP en la majoria de casos,
+        especialment quan es vol minimitzar la mida de l'arxiu sense perdre
+        qualitat visual.
+      </p>
+      <ul class="list-disc list-inside text-gray-700 mt-4">
+        <li>
+          <strong>Avantatges d’AVIF respecte a WebP:</strong>
+          <ul class="list-circle list-inside pl-5">
+            <li>
+              Millor compressió: arxius més petits amb igual o millor qualitat.
+            </li>
+            <li>
+              Maneig superior de degradats i detalls complexos, sense artefactes
+              visibles.
+            </li>
+            <li>
+              Ideal per imatges amb molts colors, textures i detalls fins.
+            </li>
+          </ul>
+        </li>
+      </ul>
+    </section>
+  </body>
+</html>
